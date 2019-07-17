@@ -4,7 +4,7 @@ import setuptools
 setuptools.setup(
     name='gdacs-reader',
     keywords=['GDACS'],
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/benjiao/gdacs-reader',
     license='BSD',
     author='Benjie Jiao',
@@ -14,7 +14,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     zip_safe=False,
     platforms='any',
-    install_requires=['requests', 'geojson'],
+    install_requires=['requests', 'geojson', 'unittest2'],
     test_suite='tests',
     classifiers=[
         'Development Status :: 3 - Alpha',

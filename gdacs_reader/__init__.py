@@ -3,10 +3,8 @@ import requests
 from . import gdacs_parser
 
 
-parser = gdacs_parser.GdacsXmlParser()
-
-
 def fetch(url="http://www.gdacs.org/xml/rss_24h.xml", offset=3):
+    parser = gdacs_parser.GdacsXmlParser()
     results = requests.get(url)
 
     # skip first 3 characters
